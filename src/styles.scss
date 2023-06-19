@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	min-height: 100vh;
+	background-color: #F9E795;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "EB Garamond", serif;
+	font-weight: 500;
+	color: #F96167;
+	padding: .5em 5em;
+
+	h1 {
+		margin: 1rem 0;
+	}
+
+	a {
+		font-size: 1.2em;
+		margin: 1rem 0;
+		text-decoration: none;
+		color: inherit;
+		border-bottom: 2px#92B393 solid;
+
+		&:hover {
+			color: #ff383e;
+			font-weight: bold;
+			border-bottom-width: 3px;
+		}
+	}
+}
+
+.main {
+	.online-presence {
+		display: grid;
+		grid-template-areas:
+			"images1 h1 images2"
+			"images1 p images2"
+			"images1 illustration images2";
+		grid-template-columns: 1fr 2fr 1fr;
+		justify-items: center;
+		text-align: center;
+
+		h1 {
+			grid-area: h1;
+			font-family: "Fraunces", serif;
+			font-weight: bold;
+			font-size: 4vw;
+			// padding: 0 15vw;
+			margin-bottom: .5em;
+			color: #1E2720;
+		}
+
+		p {
+			grid-area: p;
+			font-family: "Poppins", serif;
+			font-weight: bold;
+			font-size: calc(1em + .15vw);
+			color: #3A4E3B;
+			// padding: 0 20vw;
+			margin-bottom: 2.2rem;
+		}
+
+		.site-workers-illustration {
+			grid-area: illustration;
+			width: 65%;
+		}
+
+		.image-collection-1 {
+			grid-area: images1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+			.arrow_img {
+				width: calc(2rem + .5vw);
+				margin-left: 3vw;
+			}
+
+			.wave_img {
+				width: calc(5rem + .5vw);
+				margin-left: 7vw;
+			}
+
+			.symbol_img {
+				width: calc(3.5rem + .5vw);
+				margin-left: -5vw;
+			}
+		}
+
+		.image-collection-2 {
+			grid-area: images2;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+			.arrow_img {
+				width: calc(2rem + .5vw);
+				margin-left: -10vw;
+			}
+
+			.wave_img {
+				width: calc(5rem + .5vw);
+				margin-left: -2vw;
+			}
+
+			.symbol_img {
+				width: calc(3.5rem + .5vw);
+				margin-left: 5vw;
+			}
+		}
+	}
+
+	.choose-us {
+		background-color: #AECEE5;
+		display: grid;
+		grid-template-areas:
+			"images1 h1 images2"
+			"images1 reasons images2"
+			"images1 reasons images2";
+		grid-template-columns: 1fr 3fr 1fr;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		padding: 4rem 0 6rem;
+
+		&__h1 {
+			grid-area: h1;
+			text-align: center;
+			margin-bottom: 3rem;
+
+			h1 {
+				font-family: "Fraunces", serif;
+				font-weight: bold;
+				font-size: calc(2rem + 1.5vw);
+			}
+
+			img {
+				width: 60%;
+			}
+
+		}
+
+		.reasons {
+			grid-area: reasons;
+			display: flex;
+			gap: 4rem;
+			justify-content: space-between;
+			text-align: center;
+
+			h3 {
+				font-family: "Fraunces", serif;
+				font-weight: bold;
+				font-size: calc(1rem + .6vw);
+				margin-bottom: .7rem;
+			}
+
+			p {
+				font-family: "Poppins", serif;
+				font-size: 400;
+				font-size: calc(.9rem + .15vw);
+				text-align: center;
+			}
+
+			.num {
+				display: inline;
+				background-color: #5D785F;
+				font-family: "Fraunces", serif;
+				font-weight: bold;
+				font-size: calc(2rem + .5vw);
+				border-radius: 99px;
+				padding: 10px 23px;
+				color: white;
+			}
+
+			&__1 .num {
+				padding: 10px 25px;
+			}
+
+			.text {
+				background-color: white;
+				margin-top: 3rem;
+				padding: 1.5rem;
+			}
+
+			&__1 .text {
+				border-radius: 5rem 0 2.5rem 0;
+			}
+
+			&__2 .text {
+				border-radius: 1rem 2rem 0 .5rem;
+			}
+
+			&__3 .text {
+				border-radius: 0 5rem 0 2.5rem;
+			}
+		}
+
+		.image-collection-1 {
+			grid-area: images1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			.yellow_obj_img {
+				width: calc(4rem + 2vw);
+				margin-left: 5vw;
+			}
+
+			.stone_img {
+				width: calc(3rem + 1.5vw);
+				margin-left: -5vw;
+			}
+
+			.leaf1_img {
+				width: calc(3rem + 1.5vw);
+				margin-left: 3vw;
+			}
+		}
+
+		.image-collection-2 {
+			grid-area: images2;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			.leaf2_img {
+				width: calc(3rem + 1.5vw);
+				margin-left: -1vw;
+			}
+
+			.flower_img {
+				width: calc(2em + 1.5vw);
+				margin-left: 7vw;
+			}
+
+			.circle_img {
+				width: calc(4rem + 1.5vw);
+				margin-left: -5vw;
+			}
+		}
+
+	}
+}
