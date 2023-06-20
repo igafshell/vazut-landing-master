@@ -71,7 +71,18 @@ const Main = () => {
 					<img src={circle_img} alt="" className="circle_img" />
 				</div>
 			</section>
-			<section className="our-projects"></section>
+			<section className="our-projects">
+				<h1>Our Projects</h1>
+				<a href="#">
+					<img />
+				</a>
+				<a href="#">
+					<img />
+				</a>
+				<a href="#">
+					<img />
+				</a>
+			</section>
 		</main>
 	);
 };
