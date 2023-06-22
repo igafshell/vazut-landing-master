@@ -10,6 +10,10 @@ import stone_img from "../assets/stone-img.svg";
 import flower_img from "../assets/flower-img.svg";
 import website_making_illustration from "../assets/making-website-illustration.svg";
 import delivery_illustration from "../assets/delivery-illustration.svg";
+import projects_shape1_img from "../assets/projects-shape1-img.svg";
+import projects_shape2_img from "../assets/projects-shape2-img.svg";
+import projects_shape3_img from "../assets/projects-shape3-img.svg";
+import projects_shape4_img from "../assets/projects-shape4-img.svg";
 
 const Main = () => {
 	return (
@@ -37,9 +41,7 @@ const Main = () => {
 				</div>
 			</section>
 			<section className="choose-us">
-				<div className="choose-us__h1">
-					<h1>Why choose us</h1>
-				</div>
+				<h1>Why choose us</h1>
 				<div className="reason">
 					<div className="reason__text1 text">
 						Our websites will highlight the quality of your company and help you
@@ -73,15 +75,42 @@ const Main = () => {
 			</section>
 			<section className="our-projects">
 				<h1>Our Projects</h1>
-				<a href="#">
-					<img />
+				<a
+					href="/"
+					className="ex1"
+					aria-labelledby="First example of vazut designs"
+				>
+					<span class="sr-only">First example of vazut designs</span>
 				</a>
-				<a href="#">
-					<img />
+				<a
+					href="/"
+					className="ex2"
+					aria-labelledby="Second example of vazut designs"
+				>
+					<span class="sr-only">Second example of vazut designs</span>
 				</a>
-				<a href="#">
-					<img />
+				<a
+					href="/"
+					className="ex3"
+					aria-labelledby="Third example of vazut designs"
+				>
+					<span class="sr-only">Third example of vazut designs</span>
 				</a>
+				<img src={projects_shape1_img} alt="" className="projects-shape1" />
+				<img src={projects_shape3_img} alt="" className="projects-shape3" />
+				<img src={projects_shape2_img} alt="" className="projects-shape2" />
+				<img src={projects_shape4_img} alt="" className="projects-shape4" />
+			</section>
+			<section className="consultation">
+				<article>
+					<h3>Book a call with us</h3>
+					<p>
+						We'd love to have a chat to see how we can help you. The best first
+						step is for us to discuss your project during a free consultation.
+						Then we can move forward from there.
+					</p>
+					<a href="/">Free consultation</a>
+				</article>
 			</section>
 		</main>
 	);
