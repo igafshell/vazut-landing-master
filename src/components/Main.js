@@ -19,11 +19,8 @@ const Main = () => {
 	return (
 		<main className="main">
 			<section className="online-presence">
-				<h1>Transform Your Online Presence Today</h1>
-				<p>
-					Our websites and landing pages will help you scale your business and
-					skyrocket your sales
-				</p>
+				<h1>The Best Freelancers, at your hand</h1>
+				<p>We are the next step towards turning your dreams into reality</p>
 				<img
 					src={site_workers_illustration}
 					alt="Illustration of developers making website"
@@ -44,8 +41,8 @@ const Main = () => {
 				<h1>Why choose us</h1>
 				<div className="reason">
 					<div className="reason__text1 text">
-						Our websites will highlight the quality of your company and help you
-						easily stand out in the market.
+						We will find the best fitting web developers for your business, no
+						matter the budget or quality standards.
 					</div>
 					<img
 						src={website_making_illustration}
@@ -58,8 +55,8 @@ const Main = () => {
 						className="delivery_illustration"
 					/>
 					<div className="text reason__text2 ">
-						Also, we assure you of quick delivery of our producs, with
-						consistent and frequent updated on the progress.
+						Also, we assure you of reliable developers for your job and
+						glass-like transparency of the process.
 					</div>
 				</div>
 				<div className="image-collection-1">
