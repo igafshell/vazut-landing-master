@@ -537,18 +537,26 @@ footer {
 	h2 {
 		font-family: "EB Garamond", serif;
 		font-weight: bold;
-		font-size: calc(1rem + 2vw);
+		font-size: calc(1rem + 1vw);
 		color: #ff383e;
 	}
 
 	a {
 		margin-left: 3rem;
-		font-size: calc(.7rem + 1.5vw);
+		font-size: calc(1rem + .7vw);
 		color: #ff383e;
 	}
 
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 1200px) {
 		padding: calc(1rem + 2vw) calc(2rem + 3vw);
+
+		h2 {
+			font-size: calc(1rem + 2vw);
+		}
+
+		a {
+			font-size: calc(.7rem + 1.5vw);
+		}
 	}
 }
 
