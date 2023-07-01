@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="vazut">
+	<main class="bg-[#f4f8e7] flex justify-center items-center min-h-screen">
+		<div
+			class="bg-[#ee4e34] text-white w-9/12 md:w-7/12 lg:w-6/12 h-[70vh] lg:h-[60vh] shadow-xl py-[5vh] md:py-[7vh] 2xl:py-[5vh] px-[7vw] md:px-[7vw] xl:px-[5vw]"
+		>
+			<h1 class="max-sm:text-3xl text-4xl lg:text-6xl mb-6">
+				Get in touch with us
+			</h1>
+			<p
+				class="max-sm:text-lg text-xl md:text-2xl xl:text-3xl mb-5 md:mb-7 xl:mb-[2.5rem]"
+			>
+				We are looking forward to discussing business with you. We can be
+				contacted at:
+			</p>
+			<ul class="flex justify-evenly">
+				<li>
+					<a href="mailto:inquiries.vazut@gmail.com" target="_blank"
+						><span class="sr-only">A link to vazut's facebook page</span><Icon
+							size={40}
+							name="mdi:gmail"
+						/></a
+					>
+				</li>
+				<li>
+					<a
+						href="
+							https:
+							www.facebook.com
+							profile.php?id='100093665533647&notif_id=1688043680788328&notif_t=page_user_activity&ref=notif"
+						target="_blank"
+					>
+						<span class="sr-only">A link to vazut's facebook page</span><Icon
+							size={40}
+							name="ic:baseline-facebook"
+						/>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/AgencyVazu38850" target="_blank"
+						><span class="sr-only">A link to vazut's twitter page</span><Icon
+							size={40}
+							name="mdi:twitter"
+						/></a
+					>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/vazut_/?hl=en" target="_blank"
+						><span class="sr-only">A link to vazut's instagram page</span><Icon
+							size={40}
+							name="mdi:instagram"
+						/></a
+					>
+				</li>
+			</ul>
+		</div>
+	</main>
+</Layout>
+
+<style></style>

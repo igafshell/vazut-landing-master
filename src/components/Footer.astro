@@ -1,0 +1,42 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<footer
+	class="flex justify-between items-center py-[4vh] px-[6vw] md:py-[5vh] md:px-[7vw] 2xl:py-[4vh] 2xl:px-[6vw]"
+>
+	<div class="logo text-3xl">vazut</div>
+
+	<ul class="gap-8 flex">
+		<li>
+			<a
+				href="https://www.facebook.com/profile.php?id=100093665533647&notif_id=1688043680788328&notif_t=page_user_activity&ref=notif"
+				target="_blank"
+				><Icon size={30} name="ic:baseline-facebook" /><span class="sr-only"
+					>A link to vazut's facebook page</span
+				></a
+			>
+		</li>
+		<li>
+			<a href="https://twitter.com/AgencyVazu38850" target="_blank"
+				><Icon size={30} name="mdi:twitter" /><span class="sr-only"
+					>A link to vazut's twitter page</span
+				></a
+			>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/vazut_/?hl=en" target="_blank"
+				><Icon size={30} name="mdi:instagram" /><span class="sr-only"
+					>A link to vazut's instagram page</span
+				></a
+			>
+		</li>
+	</ul>
+</footer>
+
+<style>
+	.logo {
+		font-family: "EB Garamond", serif;
+		font-weight: 400;
+	}
+</style>
