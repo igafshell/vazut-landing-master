@@ -284,11 +284,11 @@ const Main = () => {
 			<section className="flex relative border-b-2 border-y-black max-lg:flex-col">
 				<div className="flex py-10 px-6 max-md:flex-col lg:flex-col lg:border-r-2 max-lg:border-b-2 border-black max-lg:justify-between max-md:items-start max-lg:items-center bg-gradient-to-tr from-blue-200 to-sky-300">
 					<h1
+						ref={head3}
 						className={`text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-primary font-bold fade_up ${
 							head3_visible ? "fade_show" : ""
-						} `}
-						ref={head3}>
-						Cycle{" "}
+						} `}>
+						Cycle
 					</h1>
 					<a
 						href="https://www.studio-kiln.com/"
