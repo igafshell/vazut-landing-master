@@ -54,7 +54,8 @@
 
 .box-highlighted {
 	box-shadow: 4px 5px 0px 1px #000;
-	transition: all 100ms ease-in !important;
+	transition: 100ms ease-in !important;
+	transition-property: box-shadow, transform !important;
 
 	&:hover {
 		box-shadow: 2px 2px 0px 0px #000;

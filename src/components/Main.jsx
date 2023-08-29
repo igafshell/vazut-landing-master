@@ -25,7 +25,6 @@ const Main = () => {
 	const hero1 = useRef(null);
 	const hero2 = useRef(null);
 	const hero3 = useRef(null);
-	const hero4 = useRef(null);
 	const head1 = useRef(null);
 	const head2 = useRef(null);
 	const head3 = useRef(null);
@@ -35,10 +34,6 @@ const Main = () => {
 	const desc1 = useRef(null);
 	const desc2 = useRef(null);
 	const desc3 = useRef(null);
-	const social1 = useRef(null);
-	const social2 = useRef(null);
-	const social3 = useRef(null);
-	const social4 = useRef(null);
 
 	const text1_visible = useIntersection(text1, "0px");
 	const img1_visible = useIntersection(img1, "0px");
@@ -49,7 +44,6 @@ const Main = () => {
 	const hero1_visible = useIntersection(hero1, "-150px");
 	const hero2_visible = useIntersection(hero2, "-150px");
 	const hero3_visible = useIntersection(hero3, "-150px");
-	const hero4_visible = useIntersection(hero4, "-150px");
 	const head1_visible = useIntersection(head1, "-150px");
 	const head2_visible = useIntersection(head2, "-150px");
 	const head3_visible = useIntersection(head3, "-150px");
@@ -59,10 +53,6 @@ const Main = () => {
 	const desc1_visible = useIntersection(desc1, "-150px");
 	const desc2_visible = useIntersection(desc2, "-150px");
 	const desc3_visible = useIntersection(desc3, "-150px");
-	const social1_visible = useIntersection(social1, "-50px");
-	const social2_visible = useIntersection(social2, "-50px");
-	const social3_visible = useIntersection(social3, "-50px");
-	const social4_visible = useIntersection(social4, "-50px");
 	return (
 		<main>
 			<section className="min-h-screen flex justify-end items-center border-black border-b-2 max-lg:flex-col-reverse bg-gradient-to-r from-amber-200 via-orange-200 to-orange-300">
@@ -387,10 +377,7 @@ const Main = () => {
 				<div className="sm:flex sm:justify-evenly max-sm:grid max-sm:grid-cols-4 max-sm:grid-rows-3 max-sm:justify-items-center gap-8">
 					<a
 						href="/"
-						className={`bg-rose-600 p-4 lg:p-6 rounded-lg box-highlighted col-span-4 fade_up ${
-							social1_visible ? "fade_show" : ""
-						}`}
-						ref={social1}>
+						className="bg-rose-600 p-4 lg:p-6 rounded-lg box-highlighted col-span-4">
 						<span className="sr-only">Link to Alice's Facebook account</span>
 						<img
 							src={fa_icon}
@@ -401,11 +388,8 @@ const Main = () => {
 						/>
 					</a>
 					<a
-						ref={social2}
 						href="/"
-						className={`bg-rose-600 p-4 lg:p-6 rounded-lg box-highlighted col-span-2 fade_up delay-200 ${
-							social2_visible ? "fade_show" : ""
-						}`}>
+						className="bg-rose-600 p-4 lg:p-6 rounded-lg box-highlighted col-span-2">
 						<span className="sr-only">Link to Alice's Instagram account</span>
 						<img
 							src={insta_icon}
@@ -416,11 +400,8 @@ const Main = () => {
 						/>
 					</a>
 					<a
-						ref={social3}
 						href="/"
-						className={`bg-rose-600 p-4 lg:p-6 rounded-lg box-highlighted col-span-2 fade_up delay-500 ${
-							social3_visible ? "fade_show" : ""
-						}`}>
+						className="bg-rose-600 p-4 lg:p-6 rounded-lg box-highlighted col-span-2">
 						<span className="sr-only">Link to Alice's X account</span>
 						<img
 							src={twitter_icon}
@@ -431,11 +412,8 @@ const Main = () => {
 						/>
 					</a>
 					<a
-						ref={social4}
 						href="/"
-						className={`bg-rose-600 p-4 lg:p-6 rounded-lg box-highlighted col-span-4 fade_up delay-700 ${
-							social4_visible ? "fade_show" : ""
-						}`}>
+						className="bg-rose-600 p-4 lg:p-6 rounded-lg box-highlighted col-span-4">
 						<span className="sr-only">Link to Alice's Email</span>
 						<img
 							src={email_icon}
