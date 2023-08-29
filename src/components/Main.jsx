@@ -25,8 +25,6 @@ const Main = () => {
 	const hero1 = useRef(null);
 	const hero2 = useRef(null);
 	const hero3 = useRef(null);
-	const head1 = useRef(null);
-	const head2 = useRef(null);
 	const desc1 = useRef(null);
 	const desc2 = useRef(null);
 	const desc3 = useRef(null);
@@ -40,8 +38,6 @@ const Main = () => {
 	const hero1_visible = useIntersection(hero1, "-150px");
 	const hero2_visible = useIntersection(hero2, "-150px");
 	const hero3_visible = useIntersection(hero3, "-150px");
-	const head1_visible = useIntersection(head1, "-150px");
-	const head2_visible = useIntersection(head2, "-150px");
 	const desc1_visible = useIntersection(desc1, "-150px");
 	const desc2_visible = useIntersection(desc2, "-150px");
 	const desc3_visible = useIntersection(desc3, "-150px");
@@ -121,11 +117,7 @@ const Main = () => {
 			</section>
 			<section className="flex relative border-y-2 border-y-black max-lg:flex-col">
 				<div className="flex py-10 px-6 max-md:flex-col lg:flex-col lg:border-r-2 max-lg:border-b-2 border-black max-lg:justify-between max-md:items-start max-lg:items-center bg-gradient-to-bl from-amber-200 to-amber-300">
-					<h1
-						className={`text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-primary font-bold fade_up ${
-							head1_visible ? "fade_show" : ""
-						}`}
-						ref={head1}>
+					<h1 className="text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-primary font-bold">
 						Sundown Studio
 					</h1>
 					<a
@@ -203,11 +195,7 @@ const Main = () => {
 			</section>
 			<section className="flex relative border-b-2 border-y-black max-lg:flex-col  flex-row-reverse">
 				<div className="flex py-10 px-6 max-md:flex-col lg:flex-col lg:border-l-2 max-lg:border-b-2 border-black max-lg:justify-between max-md:items-start max-lg:items-center bg-gradient-to-tr from-red-300 to-rose-300">
-					<h1
-						className={`text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-primary font-bold fade_up ${
-							head2_visible ? "fade_show" : ""
-						}`}
-						ref={head2}>
+					<h1 className="text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-primary font-bold">
 						Send App{" "}
 					</h1>
 					<a
