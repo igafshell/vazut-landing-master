@@ -261,7 +261,7 @@ const Main = () => {
 					width={space_ill.width}
 					height={space_ill.height}
 					alt="abstract depiction of space"
-					className={`max-w-[25rem] sm:max-w-[30rem] md:max-w-[35rem] xl:max-w-[45rem] 2xl:max-w-[60rem] 4xl:max-w-[100rem] fade_right ${
+					className={`max-w-[17rem] sm:max-w-[30rem] md:max-w-[35rem] xl:max-w-[45rem] 2xl:max-w-[60rem] 4xl:max-w-[100rem] fade_right ${
 						hero3_visible ? "fade_show" : ""
 					}`}
 					ref={hero3}
