@@ -1,11 +1,9 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Main from "./components/Main.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 	return (
-		<div className="App">
-			<Header />
+		<div className="min-h-screen overflow-y-hidden">
 			<Main />
 			<Footer />
 		</div>
