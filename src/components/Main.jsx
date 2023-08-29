@@ -28,9 +28,6 @@ const Main = () => {
 	const head1 = useRef(null);
 	const head2 = useRef(null);
 	const head3 = useRef(null);
-	const link1 = useRef(null);
-	const link2 = useRef(null);
-	const link3 = useRef(null);
 	const desc1 = useRef(null);
 	const desc2 = useRef(null);
 	const desc3 = useRef(null);
@@ -47,9 +44,6 @@ const Main = () => {
 	const head1_visible = useIntersection(head1, "-150px");
 	const head2_visible = useIntersection(head2, "-150px");
 	const head3_visible = useIntersection(head3, "-150px");
-	const link1_visible = useIntersection(link1, "-150px");
-	const link2_visible = useIntersection(link2, "-150px");
-	const link3_visible = useIntersection(link3, "-150px");
 	const desc1_visible = useIntersection(desc1, "-150px");
 	const desc2_visible = useIntersection(desc2, "-150px");
 	const desc3_visible = useIntersection(desc3, "-150px");
@@ -137,13 +131,10 @@ const Main = () => {
 						Sundown Studio
 					</h1>
 					<a
-						ref={link1}
 						href="https://www.sundown-studio.com/"
 						target="_blank"
 						rel="noreferrer"
-						className={`fade_up ${
-							link1_visible ? "fade_show" : ""
-						} max-md:mb-10 mt-2 2xl:mt-4 lg:mb-auto max-lg:mr-auto max-md:ml-0 max-lg:ml-4`}>
+						className="max-md:mb-10 mt-2 2xl:mt-4 lg:mb-auto max-lg:mr-auto max-md:ml-0 max-lg:ml-4">
 						<span className="sr-only">link to Sundown Studio website</span>
 						<img
 							src={link_img_1}
@@ -222,13 +213,10 @@ const Main = () => {
 						Send App{" "}
 					</h1>
 					<a
-						ref={link2}
 						href="https://send.flutterwave.com/"
 						target="_blank"
 						rel="noreferrer"
-						className={`fade_up ${
-							link2_visible ? "fade_show" : ""
-						} max-md:mb-10 mt-2 2xl:mt-4 lg:mb-auto max-lg:mr-auto max-md:ml-0 max-lg:ml-4`}>
+						className="max-md:mb-10 mt-2 2xl:mt-4 lg:mb-auto max-lg:mr-auto max-md:ml-0 max-lg:ml-4">
 						<span className="sr-only">link to flutterwave website</span>
 						<img
 							src={link_img_2}
@@ -303,13 +291,10 @@ const Main = () => {
 						Cycle{" "}
 					</h1>
 					<a
-						ref={link3}
 						href="https://www.studio-kiln.com/"
 						target="_blank"
 						rel="noreferrer"
-						className={`max-md:mb-10 mt-2 2xl:mt-4 lg:mb-auto max-lg:mr-auto max-md:ml-0 max-lg:ml-4 fade_up ${
-							link3_visible ? "fade_show" : ""
-						}`}>
+						className="max-md:mb-10 mt-2 2xl:mt-4 lg:mb-auto max-lg:mr-auto max-md:ml-0 max-lg:ml-4">
 						<span className="sr-only">link to studio kiln website</span>
 						<img
 							src={link_img_3}
