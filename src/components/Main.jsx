@@ -42,7 +42,7 @@ const Main = () => {
 	const desc2_visible = useIntersection(desc2, "-150px");
 	const desc3_visible = useIntersection(desc3, "-150px");
 	return (
-		<main>
+		<main className="overflow-y-hidden">
 			<section className="min-h-screen flex justify-end items-center border-black border-b-2 max-lg:flex-col-reverse bg-gradient-to-r from-amber-200 via-orange-200 to-orange-300">
 				<div className="flex max-lg:flex-col-reverse max-lg:text-center justify-evenly lg:justify-between lg:ml-16 xl:ml-24 2xl:ml-48 items-center max-lg:flex-grow">
 					<div
