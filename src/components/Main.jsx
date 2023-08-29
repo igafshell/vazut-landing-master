@@ -371,10 +371,7 @@ const Main = () => {
 				</p>
 				<a
 					href="/about_me"
-					className={`text-xl sm:text-3xl md:text-4xl py-3 md:py-4 px-6 md:px-8 bg-sky-700 text-blue-100 box-highlighted rounded-xl after:content-['→'] after:ml-2 fade_up ${
-						hero4_visible ? "fade_show" : ""
-					}`}
-					ref={hero4}>
+					className="text-xl sm:text-3xl md:text-4xl py-3 md:py-4 px-6 md:px-8 bg-sky-700 text-blue-100 box-highlighted rounded-xl after:content-['→'] after:ml-2">
 					Check out my 'About me' page
 				</a>
 			</section>
